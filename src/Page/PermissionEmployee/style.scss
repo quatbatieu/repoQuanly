@@ -1,0 +1,22 @@
+.container{
+    margin-top: 0px !important;
+        .ant-table-cell{
+            padding: 0 !important;
+            .checks{
+                height: 40px;
+                margin-top: 5px;
+            }
+        }
+}
+.check-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media all and (max-width: 576px) { 
+    .container{
+        margin-top: 0px;
+    }
+}

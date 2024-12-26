@@ -1,0 +1,147 @@
+.introduction {
+  &_media {
+    height: 322px;
+    position: relative;  
+    div {
+      position: absolute;
+    }
+    &__button {
+      z-index: 2;
+      top: 45%;
+      left: 30%;
+    }
+
+    &__img {
+      width: 100%;
+      max-height: 322px;  
+      height: 332px;
+      opacity: 0.2;
+    }
+  }
+
+  &_introduction {
+    background-color: #f3f3f3;
+    font-weight: 500;
+    font-family: 'RobotoBold',sans-serif;
+  }
+
+  &_item {
+    width: 100%;
+    background-color: #F3F3F3;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 4px 4px #dbdbdb;
+    border-radius: 5px;
+    p {
+      margin: auto;
+      font-weight: 600;
+      font-family: 'RobotoBold',sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  &_post_container {
+    padding-top: 60px;
+    .introduction_post_item {
+      background-color: #fff;
+      padding: 5px 30px;
+      margin-top: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 3px 3px #dbdbdb;
+      margin-bottom: 2rem;
+      width: 90%;
+    }
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  &_section {
+    display: flex;
+    justify-content: right;
+  }
+
+  &_title {
+    text-align: center;
+    color: #DD212B;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'RobotoBold', sans-serif;
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+
+  &_new {
+    background-color: #F3F3F3;
+    padding-bottom: 60px;
+  }
+  &_footer {
+    font-family: 'RobotoBold', sans-serif;
+    color: #fff;
+  }
+
+}
+
+.intro_title {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 52px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.iconify {
+  width: 22px;
+  height: 22px;
+}
+
+.react-code-input {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.custom-list-dot {
+  bottom: 30px !important;
+  .react-multi-carousel-dot {
+    button {
+      width: 70px;
+      height: 5px;
+      border-radius: 0;
+      border: none;
+      background-color: #d6d6d6;
+      margin: 5px 7px;
+    }
+
+    &.react-multi-carousel-dot--active {
+      button {
+        background-color: #DD212B;
+      }
+    }
+  }
+}
+
+.h-430 {
+  height: 430px;
+}
+
+.min-width-70 {
+  min-width: 70% !important; 
+}
+
+.error {
+  color: #DD212B;
+}
+
+.img-pointer-image {
+  cursor: pointer;
+}
+
+.img-pointer-image:hover {
+  opacity: 0.8;
+}

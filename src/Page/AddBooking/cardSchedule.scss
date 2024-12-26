@@ -1,0 +1,38 @@
+.cardSchedule {
+  border: 2px solid #000000;
+  max-width: 563px;
+  padding: 2px;
+  margin: 0px;
+
+  &__box {
+    border: 2px solid #000000;
+    padding: 15px 32px;
+
+    &__title.ant-typography.ant-typography,
+    &__stt.ant-typography.ant-typography {
+      font-weight: 700;
+    }
+
+    &__stt.ant-typography.ant-typography span {
+      font-size: 25px;
+      display: block;
+    }
+  }
+
+  &__item {
+    &__lable {
+      font-weight: 700;
+      margin-right: 4px;
+    }
+  }
+}
+
+@media print {
+  .cardSchedule {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20mm;
+    border: none;
+    max-width: unset;
+  }
+}

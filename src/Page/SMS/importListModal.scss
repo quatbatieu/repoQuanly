@@ -1,0 +1,150 @@
+.import-list-modal {
+  &_header {
+    height: 94px;
+    background: #003A8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_title {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 19px;
+      color: var(--text-color-light);
+      margin-bottom: 0px;
+    }
+  }
+
+  & .ant-drawer-header {
+    padding: 0px;
+  }
+
+  & .ant-drawer-close {
+    color: var(--text-color-light);
+  }
+
+  & .ant-drawer-body {
+    padding: 8px 16px 8px 16px;
+  }
+
+  & .ant-drawer-close:focus,
+  .ant-drawer-close:hover {
+    color: var(--hover-color-close);
+  }
+
+  .ant-upload {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+
+    .ant-upload-drag {
+      border: 1px dashed #d9d9d9;
+      padding: 20px 0;
+      background-color: #f7f7f7;
+      border-radius: 4px;
+
+      .ant-upload-text {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .ant-table {
+    margin-top: 20px;
+
+    th,
+    td {
+      text-align: center;
+    }
+  }
+
+  & .upload-container {
+    width: 100%;
+    max-width: 400px;
+  
+    & h3 {
+      margin-bottom: 16px;
+    }
+
+    & .ant-upload-drag {
+      border: dashed 2px #d9d9d9;
+      padding: 16px;
+      background: #fafafa;
+
+      & .upload-drag-icon {
+        font-size: 28px;
+        display: flex;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    &_header {
+      &_title {
+        font-size: 20px;
+      }
+
+      &_icon {
+        font-size: 16px !important;
+      }
+    }
+  }
+  & .template-content {
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  & .template-content>div {
+    white-space: pre-line;
+  }
+}
+
+.settings-list {
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  & h2 {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  & .list-info {
+    background-color: #e6f7ff;
+    padding: 12px;
+
+    & .info-icon {
+      color: #1890ff;
+      font-size: 24px;
+      margin-right: 8px;
+      display: inline;
+    }
+
+    & span {
+      margin-bottom: 16px;
+    }
+  }
+
+  & span.check-icon {
+    color: #52c41a;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  & .upload-text {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+}
+
+.ant-drawer-body ul li {
+  height: 60px !important;
+}
+
+.ant-list-bordered .ant-list-item{
+  padding-right: 0px !important;
+}

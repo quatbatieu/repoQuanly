@@ -1,0 +1,217 @@
+@import "../../assets/scss/variable";
+
+.booking_main {
+    margin: 0 12px;
+    .booking-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+            
+            .booking-title {
+                margin-top: 69px;
+                color: $--unnamed-color-24242600;
+                text-align: center;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+                margin-bottom: 68px;
+                width: 100%;
+				font-size: $text-large-fs;
+				font-weight: bold;
+            }
+
+            .add-booking-success {
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+
+                .add-booking-success-icon {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                &_link {
+                    color: #007BFF !important;
+                    cursor: pointer;
+                }
+
+                .ant-card {
+                    .ant-card-body {
+                        box-shadow: 0px 20px 24px #E4E4E6;
+
+                        div {
+                            span {
+                                text-align: left;
+                                letter-spacing: 0px;
+                                color: #242426;
+                                font-weight: 500;
+                                font-family: sans-serif;
+                            }
+                        }
+
+                        .hotline {
+                            text-align: right;
+                            text-decoration: underline;
+                            font: normal normal normal 12px/15px sans-serif;
+                            letter-spacing: 0px;
+                            color: #242426;
+                        }
+                    }
+                }
+            }
+    }
+    & .ant-radio-inner::after {
+        // top: 3px;
+        // left: 3px;
+    }
+    & .ant-form-small .ant-form-item-label > label {
+       height: auto !important;
+    }
+}
+
+.booking {
+  &__option {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    color: #0d6efd;
+  }
+
+  &__right.disabled {
+    color: #dc3545;
+  }
+  &__right.pastTime {
+    color: #d9d9d9;
+  }
+  &__right.full {
+    color: #dc3545;
+  }
+}
+
+.drawerSchedule {
+	&-header {
+		height: 94px;
+		background: #003A8C;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-title {
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 19px;
+			color: #fff;
+			margin-bottom: 0px;
+		}
+	}
+
+	& .ant-drawer-header {
+		padding: 0px;
+	}
+
+	& .ant-drawer-close {
+		color: #fff;
+	}
+
+	& .ant-drawer-body {
+		padding: 0px 16px 24px 16px;
+	}
+
+	& .ant-drawer-close:focus,
+	.ant-drawer-close:hover {
+		color: rgba(255, 255, 255, 0.75);
+	}
+}
+
+.booking {
+	&-item {
+		padding-top: 48px;
+
+		&-title {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			color: #0870D9;
+		}
+
+		&-listHistory {
+			height: 100%;
+      overflow-y: auto;
+		}
+		
+		&-itemHistory {
+			padding-bottom: 12px;
+			border-bottom: 1.4221px solid #DEDEDE;
+
+			p {
+				font-weight: 500;
+				font-size: $text-small-fs;
+				line-height: 17px;
+			}
+		}
+
+		&-itemHistory:nth-last-child(1) {
+			border-bottom: none;
+		}
+
+		&-note {
+			font-weight: 500;
+			font-size: $text-small-fs;
+			line-height: 17px;
+		}
+	}
+	
+	&-item:not(:nth-last-child(1)) {
+		border-right: 1.4221px solid #E1E1E1;
+	}
+
+	&-text {
+		font-weight: 400;
+		font-size: $text-small-fs;
+		line-height: 23px;
+		color: #0870D9;
+
+		& span {
+			color: #000;
+			font-weight: bold;
+			margin-left: 4px;
+		}
+	}
+
+	&-value {
+		font-weight: 400;
+		font-size: $text-small-fs;
+		line-height: 23px;
+	}
+
+	&-boxQRcode {
+		height: 160px;
+		width: 160px;
+		padding: 16px;
+	}
+}
+
+.notes-code {
+	line-height: 1.2;
+	white-space: pre-wrap;
+	color: #000;
+	font-weight: 400;
+	font-size: $text-small-fs;
+	line-height: 20px;	
+	font-family: Inter , sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+  .booking {
+
+		&-item:not(:nth-last-child(1)) {
+			border-right: none;
+		}
+  }
+}
+@media (max-width: 480px) {
+  .licensePlateColor{
+		display: grid !important;
+	}
+}

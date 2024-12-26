@@ -1,0 +1,43 @@
+.tingee-noti{
+    .switch{
+        display: block;
+    }
+    .expand-status{
+        width: 107px;
+        margin-left: 20px;
+    }
+    .telegram-noti_content{
+        margin-top: 10px;
+    }
+    .ant-checkbox-wrapper{
+        margin-left: unset !important;
+        display: flex !important;
+        margin-bottom: 10px;
+    }
+    .telegram-check{
+        margin-bottom: 10px !important;
+    }
+    .ant-card-head-title{
+        font-size: 14px !important;
+    }
+    .ant-typography {
+        margin-bottom: 0 !important;
+    }
+    .flex-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ant-btn-icon-only{
+        height: 22px !important;
+        width: 22px !important;
+    }
+    @media (max-width: 768px) {
+        .mobile-h0{
+            height: 1px;
+        }
+        .ant-card .ant-card-body {
+            padding: 10px !important;
+        }
+    }
+}

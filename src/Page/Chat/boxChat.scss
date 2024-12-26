@@ -1,0 +1,148 @@
+.box {
+  &__chat {
+    height: 100%;
+    border-left: 1px solid #D9D9D9;
+
+    &__box {
+      height: 100%;
+      border-right: 1px solid #D9D9D9;
+      height: calc(100vh - 140px);
+    }
+
+    &__wrap {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__header {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #D9D9D9;
+    }
+
+    &__list {
+      flex: 1;
+      overflow-y: auto;
+      padding-bottom: 64px;
+    }
+
+    &__item {
+      padding: 19px 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &__top {
+        flex: 1;
+      }
+
+      &__message,
+      &__date {
+        margin-left: 36px;
+        margin-top: 6px;
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          color: #8C8C8C;
+          word-break: break-all;
+        }
+      }
+
+      &__message {
+        margin-left: 47px;
+      }
+
+      &__date {
+        margin: 0px;
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      &__send {
+        width: 6px;
+        height: 6px;
+        background: #1890FF;
+        border-radius: 50%;
+      }
+
+      &.active {
+        background: #F0F0F0;
+      }
+    }
+
+    &__empty {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__time,
+    &__loading {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #8C8C8C;
+      }
+    }
+
+    &__loading {
+      font-weight: 700;
+    }
+  }
+}
+
+.boxMobile {
+  &__chat {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .box {
+    &__chat {
+      border-left: none;
+      display: none;
+
+      &__header {
+        display: flex;
+        align-items: center;
+      }
+
+      &__back {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .boxMobile {
+    &__chat {
+
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: #fff;
+      overflow: scroll;
+    }
+  }
+
+}

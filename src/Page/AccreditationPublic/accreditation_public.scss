@@ -1,0 +1,64 @@
+.accreditation {
+  min-width: 1200px;
+
+  &_public {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+  }
+
+  &.banner_on {
+    display: flex !important;
+  }
+
+  &_table_with_banner {
+    max-width: calc(100vw - 340px) !important;
+  }
+
+  &_banner {
+    img {
+      width: 160px;
+      height: 600px;
+    }
+  }
+
+  &_lastest {
+    flex: 1;
+    margin-bottom: 20px;
+
+    .box {
+      background: #FFFFFF;
+      border: 1px solid #30509A;
+      text-align: center;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+
+      .license-number {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        color: #30509A;
+        padding: 0px 56px;
+      }
+
+      .status {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 22px;
+        color: #000000;
+      }
+
+    }
+  }
+
+  &_listTable {
+    height: 495px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,21 @@
+.vehicleRecords {
+
+	&-upload {
+
+		& .ant-upload-list-picture-card-container {
+			margin-bottom: 48px;
+		}
+	}
+
+}
+
+.modalClose {
+	& .ant-modal-close-x {
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

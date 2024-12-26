@@ -1,0 +1,51 @@
+@import "../../assets/scss/variable";
+
+.login {
+  margin: 0 12px;
+
+  .login_form {
+    display: flex;
+    justify-content: center;
+
+    &__title {
+      text-align: center;
+      font: normal normal bold 24px/20px sans-serif;
+      letter-spacing: 0px;
+      color: #242426;
+      text-transform: uppercase;
+      padding-bottom: 75px;
+      padding-top: 100px;
+    }
+
+    &__desc {
+      max-width: 482px;
+      text-align: center;
+      padding-bottom: 75px;
+    }
+
+    &__href {
+      margin: 0px 4px;
+    }
+
+    &__wrap {
+      margin: 0 auto;
+    }
+  }
+
+  &-btn {
+    background-color: var(--main-primary) !important;
+    color: #fff !important;
+  }
+}
+.theme-color-text a{
+  color: var(--primary-color) !important;
+}
+.register-success h3{
+  color: var(--primary-color) !important;
+}
+
+@media all and (max-width : 576px){
+  .style_mobie{
+    height: $pw-height;
+  }
+}

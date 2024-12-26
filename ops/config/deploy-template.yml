@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    image: ${REPOSITORY_DOCKER_HUB}${IMAGE_NAME}
+    ports:
+      - ${EXTERNAL_PORT}:${CONTAINER_PORT}
+    deploy:
+      replicas: ${REPLICAS_NUMBER}
+      update_config:
+        order: start-first
+      placement:
+        constraints:
+          - "node.labels.service==${DOCKER_SWARM_NODE_LABEL}"        

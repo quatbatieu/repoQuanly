@@ -1,0 +1,56 @@
+@import "../../assets/scss/variable";
+
+.expand-setting {
+    .expand-setting_item {
+        overflow: hidden;
+        width: 200px;
+        height: 80px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .expand-setting_content {
+        display: flex;
+        margin: auto;
+        border-radius: 4px;
+        height: 100%;
+        align-items: center;
+        grid-gap: 10px;
+        gap: 10px;
+        cursor: pointer;
+
+        cursor: pointer;
+        img {
+            max-width: 40%;
+            height: 40px;
+            object-fit: contain;
+        }
+    }
+    .expand-setting_content-icon {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color) !important;
+        color: white;
+        border-radius: 4px;
+    }
+    .expand-setting_title {
+        margin: unset !important;
+        font-size: 12px !important;
+    }
+    .disabled {
+        background-color: $--unnamed-color-d6d6d6 !important;
+        cursor: not-allowed;
+    }
+    .ant-card-body {
+        padding: 10px !important;
+        margin: auto;
+        height: 100%;
+    }
+}
+.hiddenItem{
+    display:none !important;
+}

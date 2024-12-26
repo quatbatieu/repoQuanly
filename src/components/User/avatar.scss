@@ -1,0 +1,22 @@
+.avatar {
+  &__chat {
+    &__text {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &__icon {
+      font-size: 13px;
+    }
+
+    & span.ant-avatar.ant-avatar-circle.ant-avatar-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__image {
+      object-fit: cover;
+    }
+  }
+}

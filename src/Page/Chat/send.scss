@@ -1,0 +1,23 @@
+.send {
+  min-height: 64px;
+  padding: 20px 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  background: #fff;
+
+  &__action {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+  &__btn.ant-btn {
+    margin-left: 12px;
+    height: 31.6px;
+  }
+}

@@ -1,0 +1,92 @@
+@import 'variable';
+
+.text {
+  &-very-small {
+    font-size: $text-very-small-fs;
+    line-height: $text-very-small-lh;
+    font-weight: $text-very-small-fw;
+    color: var(--text-color);
+  }
+
+  &-small {
+    font-size: $text-small-fs;
+    line-height: $text-small-lh;
+    font-weight: $text-small-fw;
+    color: var(--text-color);
+  }
+
+  &-normal {
+    font-size: $text-normal-fs;
+    line-height: $text-normal-lh;
+    font-weight: $text-normal-fw;
+    color: var(--text-color);
+  }
+
+  &-large {
+    font-size: $text-large-fs;
+    line-height: $text-large-lh;
+    font-weight: $text-large-fw;
+    color: var(--text-color);
+  }
+
+  &-x-large {
+    font-size: $text-x-large-fs;
+    line-height: $text-x-large-lh;
+    font-weight: $text-x-large-fw;
+    color: var(--text-color);
+  }
+
+  &-primary {
+    color: var(--primary-color);
+  }
+
+  &-secondary {
+    color: var(--secondary-color);
+  }
+}
+
+.title {
+  &-very-small {
+    font-size: $title-very-small-fs;
+    line-height: $title-very-small-lh;
+    font-weight: $title-very-small-fw;
+    color: var(--text-color);
+  }
+
+  &-small {
+    font-size: $title-small-fs;
+    line-height: $title-small-lh;
+    font-weight: $title-small-fw;
+    color: var(--text-color);
+  }
+
+  &-normal {
+    font-size: $title-normal-fs;
+    line-height: $title-normal-lh;
+    font-weight: $title-normal-fw;
+    color: var(--text-color);
+  }
+
+  &-large {
+    font-size: $title-large-fs;
+    line-height: $title-large-lh;
+    font-weight: $title-large-fw;
+    color: var(--text-color);
+  }
+
+  &-x-large {
+    font-size: $title-x-large-fs;
+    line-height: $title-x-large-lh;
+    font-weight: $title-x-large-fw;
+    color: var(--text-color);
+  }
+
+  &-primary {
+    color: var(--primary-color);
+  }
+
+  &-secondary {
+    color: var(--secondary-color);
+  }
+}
+

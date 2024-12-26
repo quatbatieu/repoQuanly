@@ -1,0 +1,46 @@
+.message-filter {
+  &__item {
+    cursor: pointer;
+    padding: 10px 15px;
+
+    &--selected {
+      background-color: #e6f7ff;
+      border-left: 5px solid #1890ff;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      margin-right: 8px;
+      display: inline-flex;
+    }
+
+    &-text {
+      color: inherit;
+
+      &--active.ant-typography {
+        color: #1890ff;
+      }
+    }
+  }
+
+  & .collapse-style {
+    border: none !important;
+
+    .ant-collapse-item {
+      background-color: transparent !important;
+      border: none !important;
+
+      .ant-collapse-header {
+        justify-content: space-between;
+      }
+    }
+
+    .ant-collapse-content {
+      border: none !important;
+    }
+  }
+}

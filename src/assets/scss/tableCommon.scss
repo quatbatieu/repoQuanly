@@ -1,0 +1,84 @@
+.ant-table-thead {
+    tr {
+        th {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px !important;
+            line-height: 22px;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        th:first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+.ant-table-pagination-right{
+    justify-content: center !important;
+}
+
+.ant-table-row {
+    td {
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+
+        /* Character/Title .85 */
+
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .blue-text {
+        color: #0050B3;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-decoration-line: underline;
+
+    }
+}
+
+.ant-table-tbody {
+    .ant-table-cell {
+        padding: 8px 16px;
+
+        .editable-cell-value-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.ant-table-cell {
+    font-size: 16px !important;
+}
+
+.ant-pagination-options {
+    display: none;
+}
+
+.ant-table-row {
+    max-height: 103px !important;
+}
+@media (max-width:480px) {
+.ant-table-thead {
+    tr {
+        th {
+            font-size: $text-small-fs !important;
+        }
+    } 
+}
+.ant-table-row {
+    td {
+        font-size: $text-small-fs !important;
+    }
+}
+}

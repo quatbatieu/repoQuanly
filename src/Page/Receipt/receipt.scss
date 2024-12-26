@@ -1,0 +1,141 @@
+@import './../../assets/scss/variable';
+.receipt_container {
+  margin-top: 5em;
+
+  .form-value-text {
+    line-height: 3em;
+    margin-bottom: 24px;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+  &-body {
+    border: 1px solid #252525;
+    padding: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 296px;
+  }
+
+  .text-error {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  @media(min-width: 768px) {
+    &-body {
+      min-width: 396px;
+    }
+  }
+  @media(min-width: 380px) and (max-width: 576px)  {
+    .mobile-item{
+      width: 50% !important;
+    }
+  }
+}
+
+.create_receipt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &-body {
+    box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    padding: 24px;
+
+    .title {
+      padding-bottom: 24px;
+      box-shadow: inset 0px -1px 0px #F0F0F0;
+    }
+
+    &-item {
+      margin-bottom: 24px;
+      // display: -webkit-box;
+      // -webkit-line-clamp: 3;
+      // -webkit-box-orient: vertical;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+
+      div {
+        &:first-child {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: $text-small-fs;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          color: #918B8B;
+        }
+
+        &:last-child {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: $text-small-fs;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+
+          color: #000000;
+
+        }
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 1px 0px #F0F0F0;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  @media(min-width: 768px) {
+    &-footer {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.paymentMethod {
+
+  & .ant-radio-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media(max-width: 1024px) { 
+  .create_receipt {
+
+    &-body {
+      box-shadow : none;
+      width: 100%;
+    }
+
+  }
+}
+
+@media(max-width: 1310px) { 
+  .style_recipt{
+    margin-top: 3px;
+    svg{
+      margin-top: -5px;
+    }
+  }
+}
+
+@media all and (max-width: 281px) { 
+  .col-6{
+    width: 100% !important;
+  }
+}

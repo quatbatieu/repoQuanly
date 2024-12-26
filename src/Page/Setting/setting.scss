@@ -1,0 +1,268 @@
+.setting {
+  margin-top: 1rem !important;
+  max-width: 1200px;
+
+  &__title {
+    color: #242426;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    text-align: left;
+    font: normal normal 600 24px/20px sans-serif;
+    letter-spacing: 0px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__status {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+
+    &--update {
+      color: rgb(82, 196, 26);
+    }
+
+    &--success,
+    &--reload {
+      color: #1890FF;
+      font-weight: 700;
+    }
+
+    &--error {
+      color: #ff4d4f;
+    }
+  }
+
+  &__reload,
+  &__delete {
+    font-size: 10px;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  &__delete.anticon.anticon-close-circle {
+    color: #ff4d4f;
+    cursor: default;
+  }
+
+  &__inline {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      border: 2px solid #3D3D3D;
+    }
+
+    &.selected {
+      border: 2px solid #3D3D3D;
+    }
+  }
+
+  &__black {
+    background-color: #242426;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+  }
+
+  &__blue {
+    background-color: #002399;
+
+    &-second {
+      background-color: #007BFF;
+
+    }
+
+    &-third {
+      background-color: #25F7F2;
+
+    }
+  }
+
+  &__green {
+    background-color: #7EE010;
+
+  }
+
+  .h5 {
+    font-family: sans-serif;
+  }
+
+  &__copy_icon {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 20px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 100;
+
+    &.bg {
+      background-color: #ffffff;
+      width: 25px;
+    }
+  }
+}
+
+.edit_banner {
+  min-width: 1200px;
+  padding-top: 20px;
+
+  &_back {
+    span {
+      padding-right: 5px;
+    }
+
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
+  &__body {
+    padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_table {
+      max-width: calc(100vw - 340px) !important;
+    }
+
+    &_banner {
+      width: 160px;
+      height: 600px;
+
+      img {
+        width: 160px;
+        height: 600px;
+      }
+
+      label {
+        width: 160px;
+        height: 600px;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid red;
+        font-size: 15px;
+      }
+    }
+
+    &_pixel {
+      height: 95%;
+      font-size: 24px;
+      font-weight: 500;
+      color: #ccc;
+    }
+  }
+
+  &__button {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+
+    * {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.style-test{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicleRecords { 
+  & .ant-upload-list-picture-card-container{
+    width: 250px;
+    height: 147.24px;
+    img {
+      object-fit: cover;
+    }
+  }
+  & .ant-upload.ant-upload-select.ant-upload-select-picture-card{
+    width: 250px;
+    height: 147.24px;
+    .ant-upload-list-item-card-actions-btn.ant-btn-sm{
+      display: none;
+    }
+        .ant-upload-span{
+          a{
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+  }
+}
+
+.style-images{
+  .ant-upload-list-picture-card-container{
+    .ant-upload-list-item-card-actions-btn.ant-btn-sm{
+      display: none;
+    }
+        .ant-upload-span{
+          a{
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+  }
+}
+#stationsVerifyStatus {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.smsrow {
+  margin-bottom: 25px;
+}
+
+@media all and (max-width: 281px) { 
+  .vehicleRecords { 
+    & .ant-upload-list-picture-card-container{
+      width: 225px;
+      height: 147.24px;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  .vehicleRecords .ant-upload.ant-upload-select.ant-upload-select-picture-card {
+    width: 225px;
+  }
+}

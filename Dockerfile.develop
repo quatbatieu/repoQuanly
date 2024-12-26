@@ -1,0 +1,33 @@
+# Create image based on the official Node image from dockerhub
+FROM node:14.20 as cache-image
+
+# Bundle app source
+COPY . /usr/src/app/
+
+WORKDIR /usr/src/app
+RUN npm install 
+
+#replace new build version
+RUN sed -i "s/REACT_APP_BUILD_VERSION=/REACT_APP_BUILD_VERSION=$(date +%Y%m%d%H%M)/g" .env
+
+#read REACT_APP_API_URL from system environment
+ARG REACT_APP_API_URL=${REACT_APP_API_URL}
+ENV REACT_APP_API_URL=${REACT_APP_API_URL}
+RUN sed -i 's|REACT_APP_API_URL=.*|REACT_APP_API_URL='"$REACT_APP_API_URL"'|' .env
+
+ARG REACT_APP_API_WS_URL=${REACT_APP_API_WS_URL}
+ENV REACT_APP_API_WS_URL=${REACT_APP_API_WS_URL}
+RUN sed -i 's|REACT_APP_API_WS_URL=.*|REACT_APP_API_WS_URL='"$REACT_APP_API_WS_URL"'|' .env
+
+ARG REACT_APP_API_WSS_URL=${REACT_APP_API_WSS_URL}
+ENV REACT_APP_API_WSS_URL=${REACT_APP_API_WSS_URL}
+RUN sed -i 's|REACT_APP_API_WSS_URL=.*|REACT_APP_API_WSS_URL='"$REACT_APP_API_WSS_URL"'|' .env
+
+ARG PROJECT_NAME=${PROJECT_NAME}
+ENV PROJECT_NAME=${PROJECT_NAME}
+
+ARG REACT_APP_PROJECT_NAME=${REACT_APP_PROJECT_NAME}
+ENV REACT_APP_PROJECT_NAME=${REACT_APP_PROJECT_NAME}
+
+## Serve the app
+CMD [ "npm", "start" ]

@@ -1,0 +1,9 @@
+export const PAYMENT_GATEWAY_STATUS = {
+  ENABLE: 1,
+  DISABLE: 0, 
+}
+
+export const ENABLE_STATION_MESSAGE = {
+  ENABLE: 1,
+  DISABLE: 0,
+}

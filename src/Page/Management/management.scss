@@ -1,0 +1,144 @@
+.management {
+  &__header {
+    &__title {
+      text-align: center;
+      text-transform: uppercase;
+      font: normal normal bold 26px/30px sans-serif;
+      letter-spacing: 0px;
+      color: #000000;
+      text-transform: uppercase;
+      padding-bottom: 50px;
+    }
+
+    .custom_border {
+      .ant-select-selector {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+
+
+    @media(max-width: 920px) {
+      .mb-md-1 {
+        margin-bottom: 1rem;
+      }
+
+      .management__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .management__body {
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+
+  .disabled-text {
+    color: black !important;
+  }
+
+  @media(max-width: 426px) {
+    .d-m-none {
+      display: none;
+    }
+  }
+
+  &-roleIcon {
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  &-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &-privacyTip {
+    cursor: pointer;
+    & svg {
+      height: 14px;
+      width: 14px;
+      fill: rgb(24, 144, 255)
+    }
+  }
+}
+
+.managementEmployee {
+
+  & .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none;
+  }
+}
+
+.drawerManagement {
+  &-header {
+    height: 94px;
+    background: var(--main-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-title {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 19px;
+      color: #fff;
+      margin-bottom: 0px;
+    }
+  }
+
+  & .ant-drawer-header {
+    padding: 0px;
+  }
+
+  & .ant-drawer-close {
+    color: #fff;
+  }
+
+  & .ant-drawer-close:focus,
+  .ant-drawer-close:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &-upload {
+
+    &-title {
+      font-weight: 400;
+      font-size: 22.8197px;
+      line-height: 28px;
+    }
+
+    &-fileName {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    
+  }
+
+}
+.style_flex{
+  display: flex;
+  position: relative;
+  .style_question{
+    position: absolute;
+    top : -2px;
+    left : 50px;
+    margin-left: 10px;
+    color: #1890ff;
+  }
+  .style_question:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.modal_role{
+  .container{
+    margin-top: 0;
+  }
+}

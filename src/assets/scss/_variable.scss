@@ -1,0 +1,199 @@
+$--unnamed-color-ffffff: #FFFFFF;
+$--unnamed-color-b4b4b4: #B4B4B4;
+$--unnamed-color-d6d6d6: #D6D6D6;
+$--unnamed-color-007bff: #007BFF;
+$--unnamed-color-24242600: #242426;
+$--unnamed-color-6b6b6b: #6B6B6B;
+$--unnamed-color-7ee010: #7EE010;
+$--unnamed-color-356203: #356203;
+$--unnamed-color-24242: #242424;
+$--unnamed-color-002399: #002399;
+
+$--sunrise-yellow-6: #FADB14;
+$--blue-primary-9: #003A8C;
+$--neutral-7: #8C8C8C;
+
+
+html{
+  --main-color: #002399;
+  --sub-color: #ffffff;
+}
+
+.BLACK{
+  --main-color:#242426;
+  --sub-color: #ffffff;
+}
+
+.BLUE{
+  --main-color: #002399;
+  --sub-color: #ffffff;
+}
+
+.BLUE_SECOND{
+  --main-color:: #007BFF;
+  --sub-color: #ffffff;
+}
+
+.BLUE_THIRD{
+  --main-color: #25F7F2;
+  --sub-color: #ffffff;
+}
+
+.GREEN{
+  --main-color: #7EE010;
+  --sub-color: #ffffff;
+}
+
+// Định nghĩa kích thước chữ, khoảng cách dòng và độ đậm cho văn bản
+$text-styles: (
+  'very-small': (
+    'font-size': 12px,
+    'line-height': 1.5,
+    'font-weight': 400
+  ),
+  'small': (
+    'font-size': 14px,
+    'line-height': 1.5,
+    'font-weight': 400
+  ),
+  'normal': (
+    'font-size': 16px,
+    'line-height': 1.5,
+    'font-weight': 400
+  ),
+  'large': (
+    'font-size': 20px,
+    'line-height': 1.5,
+    'font-weight': 400
+  ),
+  'x-large': (
+    'font-size': 24px,
+    'line-height': 1.5,
+    'font-weight': 400
+  ),
+);
+
+// Định nghĩa kích thước chữ, khoảng cách dòng và độ đậm cho title
+$title-styles: (
+  'very-small': (
+    'font-size': 14px,
+    'line-height': 1.5,
+    'font-weight': 600
+  ),
+  'small': (
+    'font-size': 16px,
+    'line-height': 1.5,
+    'font-weight': 600
+  ),
+  'normal': (
+    'font-size': 24px,
+    'line-height': 1.5,
+    'font-weight': 600
+  ),
+  'large': (
+    'font-size': 32px,
+    'line-height': 1.5,
+    'font-weight': 600
+  ),
+  'x-large': (
+    'font-size': 48px,
+    'line-height': 1.5,
+    'font-weight': 600
+  ),
+);
+
+// Text styles
+$print-font-size : 13px;
+$pw-height : 37px;
+$print-font: Arial, sans-serif;
+$text-very-small-fs: map-get(map-get($text-styles, 'very-small'), 'font-size'); // 12px
+$text-very-small-lh: map-get(map-get($text-styles, 'very-small'), 'line-height'); // 1.5
+$text-very-small-fw: map-get(map-get($text-styles, 'very-small'), 'font-weight'); // 400
+
+$text-small-fs: map-get(map-get($text-styles, 'small'), 'font-size'); // 14px
+$text-small-lh: map-get(map-get($text-styles, 'small'), 'line-height'); // 1.5
+$text-small-fw: map-get(map-get($text-styles, 'small'), 'font-weight'); // 400
+
+$text-normal-fs: map-get(map-get($text-styles, 'normal'), 'font-size'); // 16px
+$text-normal-lh: map-get(map-get($text-styles, 'normal'), 'line-height'); // 1.5
+$text-normal-fw: map-get(map-get($text-styles, 'normal'), 'font-weight'); // 400
+
+$text-large-fs: map-get(map-get($text-styles, 'large'), 'font-size'); // 20px
+$text-large-lh: map-get(map-get($text-styles, 'large'), 'line-height'); // 1.5
+$text-large-fw: map-get(map-get($text-styles, 'large'), 'font-weight'); // 400
+
+$text-x-large-fs: map-get(map-get($text-styles, 'x-large'), 'font-size'); // 24px
+$text-x-large-lh: map-get(map-get($text-styles, 'x-large'), 'line-height'); // 1.5
+$text-x-large-fw: map-get(map-get($text-styles, 'x-large'), 'font-weight'); // 400
+
+// Title styles
+$title-very-small-fs: map-get(map-get($title-styles, 'very-small'), 'font-size'); // 14px
+$title-very-small-lh: map-get(map-get($title-styles, 'very-small'), 'line-height'); // 1.5
+$title-very-small-fw: map-get(map-get($title-styles, 'very-small'), 'font-weight'); // 700
+
+$title-small-fs: map-get(map-get($title-styles, 'small'), 'font-size'); // 16px
+$title-small-lh: map-get(map-get($title-styles, 'small'), 'line-height'); // 1.5
+$title-small-fw: map-get(map-get($title-styles, 'small'), 'font-weight'); // 700
+
+$title-normal-fs: map-get(map-get($title-styles, 'normal'), 'font-size'); // 24px
+$title-normal-lh: map-get(map-get($title-styles, 'normal'), 'line-height'); // 1.5
+$title-normal-fw: map-get(map-get($title-styles, 'normal'), 'font-weight'); // 700
+
+$title-large-fs: map-get(map-get($title-styles, 'large'), 'font-size'); // 32px
+$title-large-lh: map-get(map-get($title-styles, 'large'), 'line-height'); // 1.5
+$title-large-fw: map-get(map-get($title-styles, 'large'), 'font-weight'); // 700
+
+$title-x-large-fs: map-get(map-get($title-styles, 'x-large'), 'font-size'); // 48px
+$title-x-large-lh: map-get(map-get($title-styles, 'x-large'), 'line-height'); // 1.5
+$title-x-large-fw: map-get(map-get($title-styles, 'x-large'), 'font-weight'); // 700
+
+//Màu sắc cho chủ đề mặc định (chủ đề sáng)
+:root {
+  --primary-color: #1890ff; // Màu chính cho chủ đề sáng
+  --background-color: #ffffff; // Màu nền cho chủ đề sáng
+  --text-color: #000000; // Màu văn bản cho chủ đề sáng
+  --text-color-light: #fff;
+  --secondary-color: #f0f0f0; // Màu phụ cho chủ đề sáng
+  --border-color: #e8e8e8; // Màu viền cho chủ đề sáng
+  --border-dark: #000;
+  --box-shadow-card : 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  --hover-color: #e6f7ff; // Màu khi rê chuột lên cho chủ đề sáng
+  --primary-alert-color: #faad14; 
+  --main-primary: #003A8C; 
+  --bg-item-color:#114A9A;
+  --title-color:#0870d9;
+  // ...Thêm biến sáng 
+}
+
+[data-theme='DKON'] {
+  --primary-color: #d2002a; // Màu chính cho chủ đề sáng
+  --background-color: #ffffff; // Màu nền cho chủ đề sáng
+  --text-color: #000000; // Màu văn bản cho chủ đề sáng
+  --secondary-color: #f0f0f0; // Màu phụ cho chủ đề sáng
+  --border-color: #e8e8e8; // Màu viền cho chủ đề sáng
+  --hover-color: #e6f7ff; // Màu khi rê chuột lên cho chủ đề sáng
+  --text-color-light: #fff;
+  --border-dark: #000;
+  --box-shadow-card : 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  --primary-alert-color: #faad14; 
+  --main-primary: #CD2226;
+  --bg-item-color:rgb(171, 3, 40);
+  --title-color:#c50215;
+  // ...Thêm biến
+}
+
+// Màu sắc cho chủ đề tối
+body.dark {
+  --primary-color: #1890ff; // Màu chính cho chủ đề tối
+  --background-color: #121212; // Màu nền cho chủ đề tối
+  --text-color: #ffffff; // Màu văn bản cho chủ đề tối
+  --text-color-light: #000000;
+  --secondary-color: #262626; // Màu phụ cho chủ đề tối
+  --border-color: #3a3a3a; // Màu viền cho chủ đề tối
+  --border-dark: #000;
+  --box-shadow-card : 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  --hover-color: #2f2f2f; // Màu khi rê chuột lên cho chủ đề tối,
+  --hover-color-close : rgba(255, 255, 255, 0.75);
+  --primary-alert-color: #faad14; 
+  // ...Thêm biến Tối
+}

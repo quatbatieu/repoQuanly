@@ -1,0 +1,16 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px;
+    margin-left: 12px;
+
+    &-blod {
+      font-weight: 600;
+    }
+  }
+}

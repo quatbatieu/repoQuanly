@@ -1,0 +1,91 @@
+@import "../../assets/scss/variable";
+.modalPrint {
+  font-family: $print-font;
+  & table {
+    border-collapse: collapse;
+    font-size: $print-font-size;
+    width: 100%;
+  }
+
+  & table th {
+    border: 1px solid var(--border-dark);
+    padding: 4px;
+    text-align: left;
+    min-height: 30px;
+  }
+
+  & table td {
+    border: 1px solid var(--border-dark);
+    padding: 4px;
+    min-height: 30px;
+  }
+}
+
+.fixedWidthModal .ant-modal {
+  max-width: 835px !important;
+  width: 835px !important;
+  overflow-x: auto;
+}
+
+.fixedWidthModal .ant-modal-content {
+  height: 100vh;
+  max-height: 100vh; 
+}
+
+.fixedWidthModal .ant-modal-body {
+  max-height: calc(100vh - 170px);
+  background: var(--background-color); 
+  overflow-y: auto;
+}
+
+.print-page {
+  page-break-after: always;
+  width: 794px;
+}
+
+.print-page:not(:last-child) {
+  page-break-after: always;
+}
+
+.fixedWidthModal .ant-modal-footer {
+  background: #fff;
+}
+.fixedWidthModal .ant-modal-content {
+  max-height: calc(90vh);
+}
+
+@media print {
+  .modalPrint table, 
+  .modalPrint table th, 
+  .modalPrint table td {
+      box-shadow: none !important;
+      color: var(--text-color) !important;
+      background: transparent !important;
+      border: 1px solid var(--border-dark) !important;
+  }
+
+  .modalPrint table {
+      border-collapse: collapse !important;
+      font-size: $print-font-size !important;
+      width: 100% !important;
+  }
+
+  .modalPrint table th {
+      padding: 4px !important;
+      text-align: center !important;
+  }
+
+  .modalPrint table td {
+      padding: 4px !important;
+  }
+
+  .print-page {
+    page-break-after: always;
+    width: 794px;
+  }
+  
+  .print-page:not(:last-child) {
+    page-break-after: always;
+  }
+
+}

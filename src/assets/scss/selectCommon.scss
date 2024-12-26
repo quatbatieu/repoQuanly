@@ -1,0 +1,23 @@
+.ant-input-group {
+  .ant-select-selector {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  .ant-picker {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+}
+.ant-select-selector, .ant-picker{
+  background: $--unnamed-color-ffffff 0% 0% no-repeat padding-box;
+}
+
+.ant-picker-active-bar{
+  background-color:#1a1a1a !important;
+}
+.ant-form-item-has-error{
+  .ant-picker{
+    border: 1px solid  #ff4d4f !important;
+  }
+}

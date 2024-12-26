@@ -1,0 +1,23 @@
+.receiptHistory {
+
+  &-title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  &-item {
+    padding-bottom: 12px;
+    border-bottom: 1.4221px solid #DEDEDE;
+
+    p {
+      font-weight: 500;
+      line-height: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &-item:nth-last-child(1) {
+    border-bottom: none;
+  }
+}

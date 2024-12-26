@@ -1,0 +1,96 @@
+.thought_calendar {
+  &_header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_title {
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+
+  &_container &_item {
+    overflow-x: auto;
+
+    // Configure CSS for Calendar
+    & .ant-picker-calendar-full .ant-picker-panel .ant-picker-body thead tr {
+      gap: 4px;
+    }
+    & .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-content{
+      height: 125px !important;
+    }
+    & .ant-picker-calendar-full .ant-picker-panel .ant-picker-body thead tr th {
+      background: #ffe5e5;
+      border-right: 4px solid;
+      border-left: 4px solid;
+      border-color: transparent;
+    }
+  }
+
+  &_container &_item:nth-child(1) {
+    border-right: 1px solid #C2C2C2;
+  }
+
+  & .ant-tag.ant-tag-has-color {
+    border-radius: 4px;
+    min-width: 100%;
+  }
+
+  .ant-tag.ant-tag-has-color &_text {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px;
+  }
+
+  &_tag {
+    width: calc(50% - 6px);
+    justify-content: center;
+  }
+
+  &_tag-full.ant-tag.ant-tag-has-color {
+    width: 100%;
+    margin: 0;
+  }
+  &__wrap {
+    width: 901px;
+    margin: auto;
+  }
+  &_Boxtag {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.ant-picker-month-panel{
+  min-width: 280px;
+  max-width: 320px;
+  width: 100% !important;
+}
+.ant-picker-year-panel .ant-picker-cell-inner, .ant-picker-quarter-panel .ant-picker-cell-inner, .ant-picker-month-panel .ant-picker-cell-inner{
+  min-width: 70px !important;
+}
+
+.filter_time {
+  display: flex;
+  align-items: center;
+
+  &_icon {
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    margin: 0px 8px;
+    cursor: pointer;
+  }
+
+  &_date {
+    height: 36px;
+  }
+}
+@media (max-width:480px) {
+  .thought_calendar {
+    &_header {
+      display: inline-block;
+    }
+  }
+}

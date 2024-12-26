@@ -1,0 +1,61 @@
+@import "../../assets/scss/variable";
+
+.inspection_process{
+ &__title{
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+  text-align: center;
+  margin-top: 63px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 62px;
+ }
+ &__form{
+   &__title{
+    margin-bottom: 43px;
+    text-align: left;
+    font-weight: 500;
+    font-size: $text-small-fs;
+    letter-spacing: 0px;
+    color: #242426;
+   }
+   &__number{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 32px;
+    &-second{
+      justify-content: flex-start;;
+    }
+   }
+   &__button{
+     display: flex !important;
+     justify-items: center !important;
+     color: #B4B4B4 !important;
+     svg{
+       margin-right: 5px;
+       height: 20px;
+     }
+   }
+   &__save{ 
+     text-align: center;
+     margin-left: 10px;
+     padding-left: inherit;
+   }
+  
+   &:hover{
+    .inspection_process__form__delete{
+      display: unset;
+    }
+  }
+ }
+
+ overflow-x: auto;
+ &_wrap {
+   width: 1368px;
+   padding-bottom: 50px;
+ }
+
+}

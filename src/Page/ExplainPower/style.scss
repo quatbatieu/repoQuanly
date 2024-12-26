@@ -1,0 +1,14 @@
+.container{
+    margin-top: 110px;
+        .ant-table-cell{
+            padding: 0 !important;
+            .check{
+                background-color: #99FFFF;
+                height: 40px;
+            }
+            .close{
+                background-color: #FF99CC;
+                height: 40px;
+            }
+        }
+}

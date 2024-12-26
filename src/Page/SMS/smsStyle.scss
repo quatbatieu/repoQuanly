@@ -1,0 +1,62 @@
+@import "../../assets/scss/variable";
+
+.sms {
+  .title {
+    text-align: center;
+    font: normal normal bold 24px/20px sans-serif;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 58px;
+    padding-bottom: 38px;
+  }
+
+  &__new {
+    fill: greenyellow;
+  }
+
+  &__schedule {
+    fill: yellow;
+  }
+
+  &__fail {
+    fill: red;
+  }
+
+  &__cancel {
+    fill: gray;
+  }
+
+  &__receive {
+    fill: greenyellow;
+  }
+}
+
+.sms-content {
+
+  & .ant-typography.ant-typography-ellipsis {
+    position: relative;
+  }
+
+  & .ant-typography.ant-typography-ellipsis::after {
+    content: "... Hiển thị";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: white;
+    color: #0050B3;
+  }
+
+}
+
+@media all and (max-width: 576px) { 
+  .ant-picker-panels{
+    flex-wrap: wrap !important;
+  }
+}
+
+@media all and (max-width: 281px) { 
+  .mobie_style{
+    width: 100%;
+  }
+}

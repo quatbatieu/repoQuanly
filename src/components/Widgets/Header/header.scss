@@ -1,0 +1,175 @@
+@import "../../../assets/scss/variable";
+
+.header {
+  background-color: var(--main-primary);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12.8px;
+
+  &-left {
+    a {
+      img {
+        width: 284px;
+        height: 45px;
+      }
+    }
+
+    &-title {
+      color: #fff;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 0px;
+    }
+  }
+
+  &-right {
+    text-align: right;
+    color: $--unnamed-color-ffffff;
+
+    div {
+      &:last-child {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10.5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__action {
+    &__item {
+      background: var(--bg-item-color);
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+
+      svg {
+        font-size: 24px;
+        color: #fff;
+      }
+
+      :hover {
+        opacity: 0.7;
+      }
+    }
+
+    // &__badge {
+      // position: absolute;
+    // }
+  }
+
+  &__badge {
+    &__box {
+      height: 12px;
+      width: 12px;
+      background: #F5222D;
+      border-radius: 50%;
+    }
+  }
+
+  &__box {
+    margin-right: 59px;
+  }
+}
+
+.drawer {
+  & .ant-menu-item {
+    padding: 0px !important;
+    border-bottom: 1px solid #000000;
+    height: 50px;
+  }
+}
+
+.mobies_icon{
+  padding-right: 25px;
+  svg{
+    width: 25px;
+    height: 25px;
+    // fill: #fff;
+  }
+}
+
+.mobies_text{
+  // background-color: var(--main-primary);
+  // color: #fff;
+}
+
+.ant-drawer-header{
+  .ant-drawer-title{
+    color: #fff;
+  }
+  .ant-drawer-close{
+    color: #fff;
+  }
+  .ant-menu-title-content{
+    background-color: var(--main-primary);
+  }
+  border-bottom: 0px !important;
+  background-color: var(--main-primary) !important;
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+  border-right : 0px !important
+}
+
+.ant-drawer-body{
+  ul {
+    li {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+      height: 45px !important;
+      line-height: 55px !important;
+    }
+  }
+}
+
+.ant-drawer-footer{
+  border-top: 0px !important;
+  .ant-drawer-title{
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header.header {
+    padding: 0px 10px !important;
+  }
+
+  .header {
+    &__box {
+      margin-right: 0px;
+    }
+
+    &__action {
+      &__item {
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 281px) { 
+  .react-code-input{
+    input {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}
+
+@media all and (max-width: 850px) { 
+  .header {
+    &__box {
+      margin-right: 0px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.invisibleDropdown {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.customSelect {
+  width: 100px !important;
+}
+
+.summary-green {
+  color: green;
+}
+
+.summary-red {
+  color: red;
+}
+
+.time-select {
+  min-width: 80px;
+}
